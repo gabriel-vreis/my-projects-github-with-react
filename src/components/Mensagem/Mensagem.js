@@ -1,8 +1,9 @@
+import './Mensagem.css';
+
 const Mensagem = ({cor, children}) => {
     return (
-        <div>
-            <h1>Mensagem do dia:</h1>
-            <p style={{color: cor}}>{children}</p>
+        <div className='mensagem'>
+            <h1>Aviso: <span style={{color: cor}}>{children}</span></h1>
         </div>
     )
 }
