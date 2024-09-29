@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/my-projects-github-with-react/static/css/main.a12b33e6.css",
+    "main.js": "/my-projects-github-with-react/static/js/main.4a5f6db4.js",
+    "static/media/arte-manha.png": "/my-projects-github-with-react/static/media/arte-manha.dad891c53ae816162137.png",
+    "static/media/microsoft.png": "/my-projects-github-with-react/static/media/microsoft.f5bbea3d02528c369586.png",
+    "static/media/imc-no-react.png": "/my-projects-github-with-react/static/media/imc-no-react.404e83ba4f761b501a32.png",
+    "index.html": "/my-projects-github-with-react/index.html",
+    "main.a12b33e6.css.map": "/my-projects-github-with-react/static/css/main.a12b33e6.css.map",
+    "main.4a5f6db4.js.map": "/my-projects-github-with-react/static/js/main.4a5f6db4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a12b33e6.css",
+    "static/js/main.4a5f6db4.js"
+  ]
+}
