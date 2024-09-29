@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+1. Introdução
+    Este projeto foi desenvolvido como parte do Bootcamp de Desenvolvimento Front-end com React, oferecido pela iTalents. O objetivo do projeto é aplicar os principais conceitos de React, como componentização, comunicação entre componentes via props, uso de children e a criação de um formulário dinâmico.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+2. Estrutura dos Componentes
+    A aplicação foi dividida em componentes modulares, para facilitar a reutilização e manutenção do código. A estrutura do projeto é a seguinte:
 
-## Available Scripts
+src/
+│
+├── components/
+│   ├── Footer/
+│   │   └── Footer.js
+│   ├── Form/
+│   │   └── Form.js
+│   ├── Header/
+│   │   └── Header.js
+│   ├── Mensagem/
+│   │   └── Mensagem.js
+│   ├── Projetos/
+│   │   └── Projetos.js
+│   └── Saudacao/
+│       └── Saudacao.js
+│
+├── App.js
+└── App.css
 
-In the project directory, you can run:
+Descrição dos Componentes:
+    Header: Responsável por exibir o cabeçalho da aplicação.
+    Footer: Exibe o rodapé com informações adicionais.
+    Mensagem: Recebe uma mensagem e uma cor de texto via props e exibe uma mensagem personalizada. Utiliza o conceito de children para renderizar o conteúdo entre a tag de abertura e fechamento do componente.
+    Projetos: Exibe uma lista dos projetos desenvolvidos.
+    Form: Um formulário simples que permite ao usuário entrar em contato.
+    Saudacao: Componente que poderia ser utilizado para saudar o usuário, caso implementado.
 
-### `npm start`
+3. Comunicação entre Componentes
+    Os componentes da aplicação se comunicam principalmente através de props. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+4. Uso de Props e Children
+    Props: São usadas para passar dados entre componentes. 
+    Children: O conceito de children é utilizado no componente Mensagem, onde o conteúdo entre as tags do componente é exibido dinamicamente no seu interior.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+5. Funcionamento do Formulário
+    O componente Form contém um formulário básico de contato. Ele captura os dados do usuário através de inputs, mas, nesta versão, a submissão do formulário ainda não está conectada a um backend.
 
-### `npm test`
+6. Como Rodar a Aplicação
+    Pré-requisitos:
+        Node.js instalado em sua máquina.
+        Um gerenciador de pacotes como npm ou yarn.
+    Passos:
+        Clone o repositório do projeto.
+        Navegue até a pasta do projeto: cd nome-do-projeto
+        Instale as dependências: npm install
+        Execute a aplicação: npm start
+        Acesse a aplicação no navegador através de http://localhost:3000.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
